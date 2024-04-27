@@ -1,0 +1,329 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0px;
+  @media screen and (max-width: 768px) {
+    padding: 15px 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 30px 0px;
+  }
+}
+
+.heading{
+  box-shadow:rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 55px;
+text-align: center;
+font-weight: 700;
+line-height: 19.36px;
+text-shadow: 1px 4px 4px rgba(0,0,0,0.25);
+margin-bottom: 60px;
+@media screen and (max-width: 768px) {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  font-size: 36px;
+  margin-bottom: 45px;
+}
+}
+
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+a:active {
+  transform: scale(0.98);
+
+}
+.center{
+  text-align: center;
+}
+
+.tabs {
+  display: grid;
+  width: 75%;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.tab-btn {
+  display: flex;
+  padding: 15px 20px;
+  background-color: #ddd;
+  color: black;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 27px;
+  font-weight: 600;
+  font-family:  khula;
+  gap: 10px;
+  @media screen and (max-width: 768px) {
+    padding: 5px 5px;
+    gap: 2px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 10px 5px;
+    gap: 5px;
+    font-size: 22px;
+}
+}
+
+
+.tabs img{
+  width: 30px;
+  margin-top: -10px;
+  @media screen and (max-width: 768px) {
+    margin-top: -4px;
+    width: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-top: -6px;
+    width: 22px;
+}
+}
+
+.tab-btn.active {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.tab-btn img {
+ display: none;
+
+}
+
+.tab-btn.active img {
+  display: block;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* justify-content: space-around;
+  align-items:center ; */
+  width: 100%;
+  grid-gap: 23px;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    grid-template-columns: auto auto ;
+    padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+}
+
+.product-card {
+  
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  @media screen and (max-width: 768px) {
+   margin-top: 3.5rem;
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS styles here */
+}
+ 
+}
+.imageContainer{
+  height: 429.933px; /* Set your fixed height here */
+  overflow: hidden;
+  position: relative;
+  @media screen and (max-width: 768px) {
+   
+    }
+}
+.imageContainer img{
+  width: 100%;
+ 
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  @media screen and (max-width: 768px) {
+    max-width: 350px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      /* CSS styles here */
+  }
+}
+
+
+/* .product-card img {
+  width: 100%;
+  height:446.933px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+} */
+
+.product-info {
+  
+  position: relative;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+    padding-bottom: 10px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 576px;
+  left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: khula;
+  padding-bottom: 6px;
+
+  @media screen and (max-width: 768px) {
+  font-size: 13px;
+  padding: 6px 15px;
+  padding-bottom: 3px;
+  bottom: 532px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+  padding: 4px 15px;
+  padding-bottom: 0px;
+  bottom: 590px;
+}
+}
+
+.title {
+  margin-top: 0;
+  font-size: 30px;
+  font-family: khula;
+  font-weight: 600;
+  max-width: 200px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media screen and (max-width: 768px) {
+    font-size: 21px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 24px;
+}
+}
+
+.add-to-cart-btn {
+  padding: 15px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  font-family: khula;
+  font-size: 20px;
+  font-weight: 600;
+  @media screen and (max-width: 768px) {
+    margin-top: -10px;
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+
+}
+
+.add-to-cart-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+.prod-descri1{
+  display: flex;
+  align-items: baseline;
+  font-family: khula;
+  
+  gap: 10px;
+  margin-bottom: -50px;
+  @media screen and (max-width: 768px) {}
+  
+}
+.prod-descri2{
+  display: flex;
+  align-items: baseline;
+  font-family: khula;
+ 
+  gap: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS styles here */
+}
+}
+.circleSeperator{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  color: black;
+  background-color: black;
+  position: relative;
+  bottom: 3px;
+  @media screen and (max-width: 768px) {
+    height: 2px;
+  width: 2px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS styles here */
+}
+}
+.vendor{
+  font-size: 20px;
+  @media screen and (max-width: 768px) {
+  font-size: 17px;
+}
+}
+.compare-price{
+color:rgba(143, 143, 143, 1);
+text-decoration: line-through;
+}
+.discount{
+  color:red;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ckBFGKwYtkTqX1bcFjQsd+5yCMzAK3cTPru0FFY2mQFU7jG30Mcy0fjofPmKc0wvzUbSvzJlw7Ua2C2VTzsbwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="heading">SELECT YOUR CHOICE</h1>
+    <div class="tabs">
+    <div  id="men-tab" class="tab-btn active center" onclick="showTab('Men')">
+        <img src="./assests/men.svg" alt="Men" /><div > Men</div>
+    </div>
+    <div  id="women-tab" class="tab-btn center" onclick="showTab('Women')">
+       <img src="./assests/women.svg" alt="Women" />  <div>Women</div>
+    </div>
+    <div  id="kids-tab" class="tab-btn center" onclick="showTab('Kids')">
+        <img src="./assests/kids.svg" alt="Kids" /> <div >Kids</div>
+    </div>
+    </div>
+    <div class="product-container" id="product-container">
+        <!-- Product cards will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
